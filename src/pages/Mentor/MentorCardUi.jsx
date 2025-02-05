@@ -1,27 +1,31 @@
-const MentorCardUi = ({ icon, title, para }) => {
-    return (
-      <>
-        <div className="card shadow   mt-4  border-0 "  >
-          <div className="col-xl-3 col-lg-4 col-md-6 mb-3  ">
+import { FaLinkedin,  FaTwitterSquare } from "react-icons/fa";
 
-            <div className=" position-relative profile-card ">
-            <img src={icon}  alt=""  />
-            </div>
 
-            <div className="black position-absolute bottom-0 w-100 d-flex justify-content-center flex-column ">
-            <h2  className="profile-font text-center my-1">{title} </h2>
-            <span></span>
-            <p class="px-2 fs-16 text-dark font-small " style={{height:"100px"}}>{para}</p>
-            </div>
-          </div>
+const MentorCardUi = ({ icon, title, para, span,  }) => {
+  return (
+    <>
+      <div className="card shadow   mt-4  border-0 position-relative ">
+        <img src={icon} alt="" className="profile-card " />
+
+        <div className=" black card-body  position-absolute bottom-0 w-100 d-flex justify-content-center flex-column">
+          <h2 className="profile-font text-center my-1">{title} </h2> 
+          <span className="profile-description text-center">{para}</span>
+          <span className="profile-description text-center">{span}</span>
+          <div className="profile-manu-icon d-flex  justify-content-center">
+          <a href="#" className="text-white  px-2 fs-3">  <FaLinkedin /></a>
+          <a href="#" className="text-white  px-2 fs-3">  <FaTwitterSquare /></a>
+          
         </div>
-      </>
-    );
-  };
-  
-  export default MentorCardUi;
+        
+        </div>
+       
 
+      </div>
+    </>
+  );
+};
 
+export default MentorCardUi;
 
 //   height="190px"
 

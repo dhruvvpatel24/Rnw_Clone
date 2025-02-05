@@ -12,7 +12,7 @@ const Course =[
     },
     {
         icon: "course-3.png",
-        title: "Full-Stack Development",
+        title: "Full-Stack Development", 
         para: "A full-stack web developer is a person who can develop both client and server software. In addition to mastering HTML and CSS, he/she also knows how to Program a browser, Program a server, and Program a database.",
     },
 ]

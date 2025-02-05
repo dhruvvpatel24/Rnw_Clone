@@ -9,8 +9,8 @@ const CourseCardUi = ({ icon, title, para }) => {
             </div>
 
             <h4 style={{ height: "50px" }} className="mt-3">{title} </h4>
-            <p class="px-2 fs-16 text-dark font-small " style={{height:"100px"}}>{para}</p>
-            <button className="btn btn-primary btn-sm mt-4 mb-4">Know More</button>
+            <p className="px-2 fs-16 text-dark font-small " style={{height:"100px"}}>{para}</p>
+            <button className="btn btn-primary text-white btn-sm mt-4 mb-4">Know More</button>
           </div>
         </div>
       </>
